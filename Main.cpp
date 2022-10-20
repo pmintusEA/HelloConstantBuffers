@@ -15,7 +15,6 @@
 _Use_decl_annotations_
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow)
 {
-    winrt::init_apartment(winrt::apartment_type::single_threaded);
     D3D12HelloConstBuffers sample(1280, 720, L"D3D12 Hello Constant Buffers");
     return Win32Application::Run(&sample, hInstance, nCmdShow);
 }
